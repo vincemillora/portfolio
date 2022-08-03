@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Noto+Sans+JP:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  margin: 0px;
+}
+
+.footer-section {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.cursive-text {
+  font-family: 'Cedarville Cursive', cursive !important;
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+.content-text {
+  font-family:  'Bebas Neue', cursive;
+  line-height: normal !important;
+}
+.content-text-title{
+  @extend .content-text;
+  font-size: 2.5rem;
+}
+.content-text-subtitle{
+  @extend .content-text;
+  font-size: 1rem;
+}
+
+.slant {
+  transform: rotate(-5deg) skew(-5deg);
+}
+
+.white-bg {
+  background-color: white
+}
+
+.transition-effect {
+  transition: all .75s linear;
+}
+
+.title-text {
+  font-size: 3.5rem;
+  text-decoration: underline !important;
+}
+@media screen and (max-width: 350px) {
+  .title-text {
+    font-size: 2rem;
+  }
+}
+
+.dark-background {
+  background: #2C2E2F;
+  background-color: #2C2E2F;
+}
