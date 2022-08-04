@@ -105,7 +105,6 @@ import bodyFooter from "../assets/images/profile/AboutMeFooter.vue";
     min-height: calc(100vh - 128px);
   }
   .sticky-section {
-    z-index: -1;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
