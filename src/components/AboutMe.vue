@@ -51,20 +51,11 @@ import bodyFooter from "../assets/images/profile/AboutMeFooter.vue";
     ),
     url("../assets/images/profile/aboutme.jpg");
   background-size: cover;
-  background-position: center;
-  transition: all 20s;
+  background-position: center;  
 
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.title-section:hover .title-content,
-.title-section:focus .title-content {
-  transform: scale(1.2);
-}
-.title-section:hover .title-content:before,
-.title-section:focus .title-content:before {
-  display: block;
 }
 
 .body-section {
@@ -103,6 +94,9 @@ import bodyFooter from "../assets/images/profile/AboutMeFooter.vue";
     width: 50%;
     overflow: unset;
   }
+  .title-content {
+    transition: all 20s;
+  }
   .body-section {
     width: 50%;
   }
@@ -115,6 +109,15 @@ import bodyFooter from "../assets/images/profile/AboutMeFooter.vue";
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+  }
+
+  .title-section:hover .title-content,
+  .title-section:focus .title-content {
+    transform: scale(1.2);
+  }
+  .title-section:hover .title-content:before,
+  .title-section:focus .title-content:before {
+    display: block;
   }
 }
 </style>

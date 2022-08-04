@@ -47,21 +47,13 @@ I'll develop this part as soon as I can. 🙇‍♂️`,
   background-image: url("../../../assets/images/work/comiche.jpg");
   background-size: cover;
   background-position: center;
-  transition: all 20s;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.parent:hover .child,
-.parent:focus .child {
-  transform: scale(1.2);
-}
-.parent:hover .child:before,
-.parent:focus .child:before {
-  display: block;
-}
+
 
 .hidden-button {
   text-decoration: underline 0.15em;
@@ -74,5 +66,20 @@ I'll develop this part as soon as I can. 🙇‍♂️`,
 .parent:hover .hidden-button {
   --offset: 0.4em;
   text-decoration-color: #c0375f;
+}
+
+@media screen and (min-width: 600px) {
+  .child {
+    transition: all 20s;
+  }
+
+  .parent:hover .child,
+  .parent:focus .child {
+    transform: scale(1.2);
+  }
+  .parent:hover .child:before,
+  .parent:focus .child:before {
+    display: block;
+  }
 }
 </style>
