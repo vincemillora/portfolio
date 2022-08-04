@@ -11,7 +11,7 @@ import { NGradientText } from "naive-ui";
         <footerImage />
       </div>
       <n-gradient-text type="error" class="name cursive-text slant">
-        Fin。
+        Fin.
       </n-gradient-text>
     </div>
     <div class="footer-section">
